@@ -1,0 +1,16 @@
+{
+  "name": "start-long",
+  "frames": 1200,
+  "events": [
+    {
+      "frame": 360,
+      "keys": [
+        "start"
+      ]
+    },
+    {
+      "frame": 372,
+      "keys": []
+    }
+  ]
+}

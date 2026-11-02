@@ -1,0 +1,26 @@
+{
+  "name": "start-down",
+  "frames": 900,
+  "events": [
+    {
+      "frame": 360,
+      "keys": [
+        "start"
+      ]
+    },
+    {
+      "frame": 372,
+      "keys": []
+    },
+    {
+      "frame": 600,
+      "keys": [
+        "down"
+      ]
+    },
+    {
+      "frame": 612,
+      "keys": []
+    }
+  ]
+}

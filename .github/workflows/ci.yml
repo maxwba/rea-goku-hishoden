@@ -1,0 +1,40 @@
+name: Verificações
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: macos-14
+    timeout-minutes: 20
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Preparar CMake
+        run: command -v cmake >/dev/null || brew install cmake
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Testes Python sem ROM
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Localização
+        run: python3 tools/check_localization.py
+      - name: Sintaxe dos scripts
+        run: |
+          for script in Jogar.command Analisar.command; do bash -n "$script"; done
+          for script in tools/dev.sh tools/build-reference-tools.sh; do sh -n "$script"; done
+          node --check tools/reference-ui/viewer.js
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets --locked -- -D warnings
+      - run: cargo test --no-default-features --locked
+      - run: cargo test --locked
+      - run: cargo build --locked
+      - name: Percurso SDL com vídeo virtual
+        run: python3 tools/check_native.py

@@ -1,0 +1,25 @@
+# Referências e derivados privados: nunca publicar
+*.gb
+*.gbc
+*.rom
+*.iso
+*.bps
+private-roms/
+private-analysis/
+
+# Rust e arquivos locais
+/target/
+.DS_Store
+.env
+__pycache__/
+*.pyc
+/.tools/
+
+# Preferências locais da demonstração
+/saves/
+
+# Diagnósticos locais de execução
+/logs/
+
+# Clone separado usado para publicação local
+/publication-clone/

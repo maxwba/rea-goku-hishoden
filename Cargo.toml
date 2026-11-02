@@ -1,0 +1,20 @@
+[package]
+name = "rea-goku-hishoden"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[features]
+default = ["native"]
+native = ["dep:sdl3"]
+
+[[bin]]
+name = "rea-goku-hishoden"
+path = "src/main.rs"
+required-features = ["native"]
+
+[dependencies]
+sdl3 = { version = "=0.21.0", optional = true, features = ["build-from-source-static"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+font8x8 = "0.3.1"

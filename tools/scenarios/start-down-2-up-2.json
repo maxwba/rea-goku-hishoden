@@ -1,0 +1,56 @@
+{
+  "name": "start-down-2-up-2",
+  "frames": 1200,
+  "events": [
+    {
+      "frame": 360,
+      "keys": [
+        "start"
+      ]
+    },
+    {
+      "frame": 372,
+      "keys": []
+    },
+    {
+      "frame": 600,
+      "keys": [
+        "down"
+      ]
+    },
+    {
+      "frame": 612,
+      "keys": []
+    },
+    {
+      "frame": 660,
+      "keys": [
+        "down"
+      ]
+    },
+    {
+      "frame": 672,
+      "keys": []
+    },
+    {
+      "frame": 720,
+      "keys": [
+        "up"
+      ]
+    },
+    {
+      "frame": 732,
+      "keys": []
+    },
+    {
+      "frame": 780,
+      "keys": [
+        "up"
+      ]
+    },
+    {
+      "frame": 792,
+      "keys": []
+    }
+  ]
+}
