@@ -1,0 +1,26 @@
+{
+  "name": "start-then-up",
+  "frames": 1200,
+  "events": [
+    {
+      "frame": 360,
+      "keys": [
+        "start"
+      ]
+    },
+    {
+      "frame": 372,
+      "keys": []
+    },
+    {
+      "frame": 600,
+      "keys": [
+        "up"
+      ]
+    },
+    {
+      "frame": 612,
+      "keys": []
+    }
+  ]
+}

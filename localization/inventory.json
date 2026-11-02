@@ -1,0 +1,35 @@
+{
+  "demo_keys": [
+    "demo.title",
+    "menu.start",
+    "menu.options",
+    "menu.exit",
+    "demo.message",
+    "menu.controls",
+    "demo.next",
+    "common.back",
+    "options.language",
+    "options.scale",
+    "options.palette",
+    "options.controls",
+    "palette.green",
+    "palette.blue",
+    "palette.gray",
+    "title.name",
+    "title.subtitle",
+    "title.demo",
+    "title.start",
+    "dialogue.speaker",
+    "dialogue.reveal",
+    "dialogue.finish"
+  ],
+  "pending_original_content": [
+    "tela inicial",
+    "menus",
+    "diálogos",
+    "combate",
+    "textos em gráficos",
+    "créditos"
+  ],
+  "status": "Sem extração: aguardando evidências e autorização de uso dos materiais."
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Referência local — análise</title>
+<link rel="stylesheet" href="/viewer.css">
+<script src="/viewer.js" defer></script>
+</head>
+<body>
+<main>
+<header><p class="eyebrow">ANÁLISE LOCAL · DMG-B</p><h1>Referência do jogo</h1>
+<p>Observe as telas e marque o que está vendo. Esta ferramenta é separada da demonstração Rust.</p></header>
+<div class="workspace">
+<section class="screen-panel" aria-label="Tela de referência">
+<canvas id="screen" width="160" height="144" tabindex="0" aria-label="Tela do jogo local. Clique para usar o teclado."></canvas>
+<p id="position" aria-live="off">0 quadros executados · pausado</p>
+<div class="buttons"><button id="play">Rodar</button><button id="step">+1 quadro</button><button id="advance">+60 quadros</button><button id="reset">Reiniciar</button></div>
+</section>
+<aside>
+<h2>Pontos de observação</h2>
+<label for="preset">Sequência reproduzível</label>
+<select id="preset"><option value="before-start">Sem botões · 360 quadros</option><option value="after-start">Após Start · 600 quadros</option><option value="after-down">Start e Baixo · 660 quadros</option><option value="after-a">Start e A · 660 quadros</option></select>
+<button id="replay">Carregar ponto</button>
+<h2>Marcar uma tela</h2>
+<p>Pause no ponto desejado e escolha uma classificação. Não transcreva diálogos.</p>
+<label for="category">O que aparece na tela?</label>
+<select id="category"><option value="title">Tela inicial</option><option value="menu">Menu</option><option value="dialogue">Diálogo</option><option value="world">Exploração</option><option value="battle">Combate</option><option value="other">Outra tela</option></select>
+<button id="label" class="primary">Salvar observação local</button>
+<p id="status" role="status">Preparando referência…</p>
+<h2>Controles</h2>
+<dl><dt>Direções</dt><dd>Setas</dd><dt>A / B</dt><dd>Z / X</dd><dt>Start</dt><dd>Enter</dd><dt>Select</dt><dd>Backspace</dd></dl>
+<p>Clique em <strong>Rodar</strong> e depois na tela para usar o teclado. Pause para classificar.</p>
+<p class="note">Somente neste computador. Imagens ficam em memória; observações e sequências de botões ficam na pasta privada. Encerre com Ctrl+C no Terminal.</p>
+</aside>
+</div>
+</main>
+</body>
+</html>
